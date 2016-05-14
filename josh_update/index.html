@@ -4,11 +4,11 @@
 	<title>Entertains-R-Us</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
 
-	<div class="container">
+	<div class="container-fluid">
 		<nav class="navbar navbar-default">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -35,21 +35,61 @@
 		      </form> -->
 
 		      <ul class="nav navbar-nav navbar-right">
-		      	<li class='all'><a>All Items</a></li>
-		        <li class='moviesButton'><a>Movies</a></li>
-        		<li class='musicButton'><a>Music</a></li>
+		      	<li class="dropdown">
+		      		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Select Items <span class="caret"></span></a>
+		      		<ul class="dropdown-menu">
+		      			<li class='all_button'><a>All Items</a></li>
+	      			</ul>
+	      		</li>
         	  </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
 		<div class="content">
+		</div>
+		<footer>Team Super Awesome&copy; 2016</footer>
+
+		<!-- <img src="https://upload.wikimedia.org/wikipedia/en/d/da/Lippsmouthtomouth.jpg" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"> -->
+		
+		<div class="modal" id="productModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row">
+			        <div class="col-md-6">
+			       		<img class="modal_image" src="">
+			        </div>
+			        <div class="col-md-6">
+			        	<div class="modal_price">
+			        	</div>
+			        	<div class="modal_genre">
+			        		<ul>
+			        		</ul>
+			        	</div>
+			        	<div class="modal_features">
+			        		<ul>
+			        		</ul>
+			        	</div>
+			        </div>
+		        </div>
+		      </div>
+		      <div class="modal-footer">
+		        
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
 
 	</div>
-	<footer>Team Super Awesome&copy; 2016</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<script src="scripts.js"></script>
+	<script src='scripts.js'></script>
 </body>
 </html>
